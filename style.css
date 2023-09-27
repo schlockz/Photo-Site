@@ -1,0 +1,44 @@
+/*  */
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Ubuntu:ital@0;1&display=swap');
+
+
+body{
+    background-color: #e5e5e8;
+
+}
+
+h1{
+    font-family:'ubuntu', sans-serif;
+/* H1 elements start off as bold */
+text-transform: uppercase;
+letter-spacing:5px;
+font-size: 30px;
+text-align: center ;
+border-bottom: 5px solid #b1afb9;
+padding-bottom: 10px;
+
+/* Setting the width on the h1 so the bottom border will be displayed over the two middle images */
+/* Width of the two images: 22.5 x 2 = 45 */
+/* Width of the space between the images: 3.33 */
+/* 45 + 3.33 = 48.33 */
+width: 48.33%;
+
+/*  */
+margin:20px auto;
+}
+img{
+   /* Setting it up like this so when the columns and rows are set up, it will fully take up the columns. */
+    width: 100%;
+
+}
+#main{
+    display:grid;
+    /* 22.5 x 4 = 90 */
+    grid-template-columns:repeat(4,22.5%);
+    /* 3.33*3 =10 */
+    column-gap:3.33%;
+    
+    /* setting the row-gap to twice the percentage amount of the column-gap because the height of the grid container (AKA the Div element) is about half of the width */
+    row-gap:6.66%;
+
+}
